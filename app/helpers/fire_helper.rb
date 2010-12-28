@@ -1,0 +1,2 @@
+module FireHelper
+end

@@ -1,0 +1,8 @@
+<%-form_for:data ,:url=>{:action=>"view"} do |f| %>
+<%=f.label:"Title"%><br>
+<%=f.text_field:title%><br>
+<%=f.label:"Description"%><br>
+<%=f.text_field:description%><br>
+<%=f.submit:"post"%>
+<%-end%>
+<%= link_to "click",:controller=>"fire",:action=>"showpost"%>

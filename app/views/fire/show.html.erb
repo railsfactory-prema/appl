@@ -1,0 +1,5 @@
+<% for i in @a %>
+<%= i.name %><br>
+<%= i.comment %>
+<% end %>
+<%= link_to "write new post",:controller=>"fire",:action=>"add"%>

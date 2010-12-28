@@ -1,0 +1,9 @@
+<%-form_for:data ,:url=>{:action=>"edit"} do |f| %>
+<%=f.label:"Name"%><br>
+<%=f.text_field:name%><br>
+<%=f.label:"Comment"%><br>
+<%=f.text_field:comment%><br>
+<%=f.submit:"click"%>
+<%-end%>
+<%= link_to "click to view", :controller => "fire",:action =>"show" %>
+<%= link_to "logout", :controller=>"devise/sessions",:action=>"destroy" %>
